@@ -1,0 +1,67 @@
+{
+ "signatures": [
+  {
+   "keyid": "aa731b3cc24464a6bf5e42d9b54998a2b6fa97a5a7c8f4ff3492bcaea4b37efb",
+   "sig": ""
+  }
+ ],
+ "signed": {
+  "_type": "root",
+  "consistent_snapshot": true,
+  "expires": "2027-04-09T21:46:42Z",
+  "keys": {
+   "aa731b3cc24464a6bf5e42d9b54998a2b6fa97a5a7c8f4ff3492bcaea4b37efb": {
+    "keytype": "sigstore-oidc",
+    "keyval": {
+     "identity": "amaanulhaq.s@outlook.com",
+     "issuer": "https://github.com/login/oauth"
+    },
+    "scheme": "Fulcio",
+    "x-tuf-on-ci-keyowner": "@amaanx86"
+   },
+   "e3554868a324313ee22544e73c0dd14fbe1d362756885279a5b1c14fd411da9a": {
+    "keytype": "sigstore-oidc",
+    "keyval": {
+     "identity": "https://github.com/amaanx86/oci-prometheus-sd-proxy-tuf-on-ci/.github/workflows/online-sign.yml@refs/heads/main",
+     "issuer": "https://token.actions.githubusercontent.com"
+    },
+    "scheme": "Fulcio",
+    "x-tuf-on-ci-online-uri": "sigstore:"
+   }
+  },
+  "roles": {
+   "root": {
+    "keyids": [
+     "aa731b3cc24464a6bf5e42d9b54998a2b6fa97a5a7c8f4ff3492bcaea4b37efb"
+    ],
+    "threshold": 1
+   },
+   "snapshot": {
+    "keyids": [
+     "e3554868a324313ee22544e73c0dd14fbe1d362756885279a5b1c14fd411da9a"
+    ],
+    "threshold": 1,
+    "x-tuf-on-ci-expiry-period": 365,
+    "x-tuf-on-ci-signing-period": 60
+   },
+   "targets": {
+    "keyids": [
+     "aa731b3cc24464a6bf5e42d9b54998a2b6fa97a5a7c8f4ff3492bcaea4b37efb"
+    ],
+    "threshold": 1
+   },
+   "timestamp": {
+    "keyids": [
+     "e3554868a324313ee22544e73c0dd14fbe1d362756885279a5b1c14fd411da9a"
+    ],
+    "threshold": 1,
+    "x-tuf-on-ci-expiry-period": 2,
+    "x-tuf-on-ci-signing-period": 1
+   }
+  },
+  "spec_version": "1.0.31",
+  "version": 1,
+  "x-tuf-on-ci-expiry-period": 365,
+  "x-tuf-on-ci-signing-period": 60
+ }
+}
