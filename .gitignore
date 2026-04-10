@@ -1,2 +1,5 @@
 # Local configuration for tuf-on-ci-sign
 .tuf-on-ci-sign.ini
+
+# Python Virtual Environment
+.venv*/
