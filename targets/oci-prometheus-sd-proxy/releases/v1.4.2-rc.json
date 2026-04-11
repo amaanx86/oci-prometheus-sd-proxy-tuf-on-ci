@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "project": "oci-prometheus-sd-proxy",
+  "version": "1.4.2-rc",
+  "tag": "v1.4.2-rc",
+  "image": "ghcr.io/amaanx86/oci-prometheus-sd-proxy",
+  "digest": "sha256:759e255e607f623e0b1ee4ea9df02b2aefd89e2c9ec979842ee2e6f8b21772fd",
+  "image_ref_digest": "ghcr.io/amaanx86/oci-prometheus-sd-proxy@sha256:759e255e607f623e0b1ee4ea9df02b2aefd89e2c9ec979842ee2e6f8b21772fd",
+  "release_metadata_asset_url": "https://github.com/amaanx86/oci-prometheus-sd-proxy/releases/download/v1.4.2-rc/release-metadata.json",
+  "release_url": "https://github.com/amaanx86/oci-prometheus-sd-proxy/releases/tag/v1.4.2-rc",
+  "workflow_run_url": "https://github.com/amaanx86/oci-prometheus-sd-proxy/actions/runs/24290258383",
+  "cosign_verify_cmd": "cosign verify --certificate-identity=https://github.com/amaanx86/oci-prometheus-sd-proxy/.github/workflows/docker-build-push.yml@refs/tags/v1.4.2-rc --certificate-oidc-issuer=https://token.actions.githubusercontent.com ghcr.io/amaanx86/oci-prometheus-sd-proxy@sha256:759e255e607f623e0b1ee4ea9df02b2aefd89e2c9ec979842ee2e6f8b21772fd",
+  "cosign_verify_attestation_cmd": "cosign verify-attestation --certificate-identity=https://github.com/amaanx86/oci-prometheus-sd-proxy/.github/workflows/docker-build-push.yml@refs/tags/v1.4.2-rc --certificate-oidc-issuer=https://token.actions.githubusercontent.com --type https://github.com/amaanx86/oci-prometheus-sd-proxy/release-metadata ghcr.io/amaanx86/oci-prometheus-sd-proxy@sha256:759e255e607f623e0b1ee4ea9df02b2aefd89e2c9ec979842ee2e6f8b21772fd",
+  "created_at": "2026-04-11T19:56:59Z"
+}
