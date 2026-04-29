@@ -17,9 +17,14 @@ jobs:
       pull-requests: write # for modifying signing event pull requests
       actions: write # for dispatching another signing-event workflow
 
+    env:
+      GIT_AUTHOR_NAME: devops-ci-bot
+      GIT_AUTHOR_EMAIL: amaanulhaq.s+ci@outlook.com
+      GIT_COMMITTER_NAME: devops-ci-bot
+      GIT_COMMITTER_EMAIL: amaanulhaq.s+ci@outlook.com
     steps:
       - name: Signing event
-        # if: github.repository_owner == 'insert-owner-name-here' # avoid running in forks
+        if: github.repository_owner == 'amaanx86' # avoid running in forks
         uses: theupdateframework/tuf-on-ci/actions/signing-event@daa76c3dbf011b70f9fb01dbb989a27bbd2bd20d # v0.19.0
         with:
           token: ${{ secrets.TUF_ON_CI_TOKEN || secrets.GITHUB_TOKEN }}
