@@ -1,1 +1,128 @@
-{"signatures":[],"signed":{"_type":"targets","expires":"2027-04-09T21:46:42Z","spec_version":"1.0.31","targets":{"oci-prometheus-sd-proxy/releases/v1.4.2-rc.json":{"hashes":{"sha256":"d24aa1c83ecd2a5b0a52c3e217a7f718590aa9b70bdec7f2c520f20c22e52e2f"},"length":1587},"oci-prometheus-sd-proxy/releases/v1.4.2.json":{"hashes":{"sha256":"2df6d9931586be4535b7fba1a25e1055c6f1d6acec4c5cfe2e714f5db4a36481"},"length":1569},"oci-prometheus-sd-proxy/releases/v1.5.0.json":{"hashes":{"sha256":"b67cad65d37bf3df78dfef559ec49613a9d9b3dc2ad9855e252d28927630ac94"},"length":1569},"oci-prometheus-sd-proxy/releases/v1.5.1.json":{"hashes":{"sha256":"5cdf05dba12a196e0491df6fc9c5bbf85ae549b6561ce2d9244cdc0121229add"},"length":1569},"oci-prometheus-sd-proxy/releases/v1.5.2.json":{"hashes":{"sha256":"b8b2c007db800d289d7da8df0c411cccdacc86a099e8db30e5b3f1ccf2dcfa91"},"length":1569},"oci-prometheus-sd-proxy/releases/v1.5.3-rc.json":{"hashes":{"sha256":"d183933af12c00480ae495001e635591cab4f5951e31638380d9b6cb61dbbc43"},"length":1587},"oci-prometheus-sd-proxy/releases/v1.5.3.json":{"hashes":{"sha256":"4d5c34b1c560ab2c1828e0bdab1ec67e0827d8c0b05f50f22d76762568599f6c"},"length":1569},"oci-prometheus-sd-proxy/releases/v1.5.4.json":{"hashes":{"sha256":"b11b0a5f4aec143da4be5a0d9cf34b2a5c325d500595fef5f57b5344724e1ca4"},"length":1569}},"version":9,"x-tuf-on-ci-expiry-period":365,"x-tuf-on-ci-signing-period":60}}
+{
+ "signatures": [
+  {
+   "bundle": {
+    "mediaType": "application/vnd.dev.sigstore.bundle.v0.3+json",
+    "messageSignature": {
+     "messageDigest": {
+      "algorithm": "SHA2_256",
+      "digest": "DyXI2DZG0funJJb79ofwAOWXCbEwkcKz+WgVYwkbKd0="
+     },
+     "signature": "MEQCIEFKzKkGvaOE6vbqvAO1+eHAfCKK+ja5pKRQtUetglaAAiAKIf3zce2UhGXSbVMPj+m77jPejmdAk0jb6U9qCMBCvg=="
+    },
+    "verificationMaterial": {
+     "certificate": {
+      "rawBytes": "MIIC2DCCAl2gAwIBAgIUbERMbU7ShQv/FAXEHG1ssDFC91swCgYIKoZIzj0EAwMwNzEVMBMGA1UEChMMc2lnc3RvcmUuZGV2MR4wHAYDVQQDExVzaWdzdG9yZS1pbnRlcm1lZGlhdGUwHhcNMjYwNTI1MjAzNTU4WhcNMjYwNTI1MjA0NTU4WjAAMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE6pMTI2OxlD+Kjz6VfvPVHwcoI3qBQEaaCEvbu8vtPdOeBiRX+EHXml9X7DwZCBuSHyqLJ0t6uCutvYcUXTcZhKOCAXwwggF4MA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAdBgNVHQ4EFgQUcPFE3G7yyAm5qDAo8l81O/qLfCIwHwYDVR0jBBgwFoAU39Ppz1YkEZb5qNjpKFWixi4YZD8wJgYDVR0RAQH/BBwwGoEYYW1hYW51bGhhcS5zQG91dGxvb2suY29tMCwGCisGAQQBg78wAQEEHmh0dHBzOi8vZ2l0aHViLmNvbS9sb2dpbi9vYXV0aDAuBgorBgEEAYO/MAEIBCAMHmh0dHBzOi8vZ2l0aHViLmNvbS9sb2dpbi9vYXV0aDCBigYKKwYBBAHWeQIEAgR8BHoAeAB2AN09MGrGxxEyYxkeHJlnNwKiSl643jyt/4eKcoAvKe6OAAABnmDZ+uoAAAQDAEcwRQIgA6bJonCwZyzsZxbFBgEsQ/7DqTvESJUmeFK0i3HQBgsCIQCxb5553qBFIHzQ3FL01K7PE0u1QzQ3JuXlN4ohJFH/5zAKBggqhkjOPQQDAwNpADBmAjEAjhgTniB5zCPOagk8WYwHiDwX9Pvq8KCtoErRl583Okp4XOqv28q/d0mZ4EtiDH+cAjEA3Z9dBb3Z9YeDt8Ms67i1U1wGldcjU6+cXVZyLZn4Ck4OvXy9f7zk/+8rQJPlD/Fl"
+     },
+     "timestampVerificationData": {},
+     "tlogEntries": [
+      {
+       "canonicalizedBody": "eyJhcGlWZXJzaW9uIjoiMC4wLjEiLCJraW5kIjoiaGFzaGVkcmVrb3JkIiwic3BlYyI6eyJkYXRhIjp7Imhhc2giOnsiYWxnb3JpdGhtIjoic2hhMjU2IiwidmFsdWUiOiIwZjI1YzhkODM2NDZkMWZiYTcyNDk2ZmJmNjg3ZjAwMGU1OTcwOWIxMzA5MWMyYjNmOTY4MTU2MzA5MWIyOWRkIn19LCJzaWduYXR1cmUiOnsiY29udGVudCI6Ik1FUUNJRUZLektrR3ZhT0U2dmJxdkFPMStlSEFmQ0tLK2phNXBLUlF0VWV0Z2xhQUFpQUtJZjN6Y2UyVWhHWFNiVk1QaittNzdqUGVqbWRBazBqYjZVOXFDTUJDdmc9PSIsInB1YmxpY0tleSI6eyJjb250ZW50IjoiTFMwdExTMUNSVWRKVGlCRFJWSlVTVVpKUTBGVVJTMHRMUzB0Q2sxSlNVTXlSRU5EUVd3eVowRjNTVUpCWjBsVllrVlNUV0pWTjFOb1VYWXZSa0ZZUlVoSE1YTnpSRVpET1RGemQwTm5XVWxMYjFwSmVtb3dSVUYzVFhjS1RucEZWazFDVFVkQk1WVkZRMmhOVFdNeWJHNWpNMUoyWTIxVmRWcEhWakpOVWpSM1NFRlpSRlpSVVVSRmVGWjZZVmRrZW1SSE9YbGFVekZ3WW01U2JBcGpiVEZzV2tkc2FHUkhWWGRJYUdOT1RXcFpkMDVVU1RGTmFrRjZUbFJWTkZkb1kwNU5hbGwzVGxSSk1VMXFRVEJPVkZVMFYycEJRVTFHYTNkRmQxbElDa3R2V2tsNmFqQkRRVkZaU1V0dldrbDZhakJFUVZGalJGRm5RVVUyY0UxVVNUSlBlR3hFSzB0cWVqWldablpRVmtoM1kyOUpNM0ZDVVVWaFlVTkZkbUlLZFRoMmRGQmtUMlZDYVZKWUswVklXRzFzT1ZnM1JIZGFRMEoxVTBoNWNVeEtNSFEyZFVOMWRIWlpZMVZZVkdOYWFFdFBRMEZZZDNkblowWTBUVUUwUndwQk1WVmtSSGRGUWk5M1VVVkJkMGxJWjBSQlZFSm5UbFpJVTFWRlJFUkJTMEpuWjNKQ1owVkdRbEZqUkVGNlFXUkNaMDVXU0ZFMFJVWm5VVlZqVUVaRkNqTkhOM2w1UVcwMWNVUkJiemhzT0RGUEwzRk1aa05KZDBoM1dVUldVakJxUWtKbmQwWnZRVlV6T1ZCd2VqRlphMFZhWWpWeFRtcHdTMFpYYVhocE5Ga0tXa1E0ZDBwbldVUldVakJTUVZGSUwwSkNkM2RIYjBWWldWY3hhRmxYTlRGaVIyaG9ZMU0xZWxGSE9URmtSM2gyWWpKemRWa3lPWFJOUTNkSFEybHpSd3BCVVZGQ1p6YzRkMEZSUlVWSWJXZ3daRWhDZWs5cE9IWmFNbXd3WVVoV2FVeHRUblppVXpsellqSmtjR0pwT1haWldGWXdZVVJCZFVKbmIzSkNaMFZGQ2tGWlR5OU5RVVZKUWtOQlRVaHRhREJrU0VKNlQyazRkbG95YkRCaFNGWnBURzFPZG1KVE9YTmlNbVJ3WW1rNWRsbFlWakJoUkVOQ2FXZFpTMHQzV1VJS1FrRklWMlZSU1VWQloxSTRRa2h2UVdWQlFqSkJUakE1VFVkeVIzaDRSWGxaZUd0bFNFcHNiazUzUzJsVGJEWTBNMnA1ZEM4MFpVdGpiMEYyUzJVMlR3cEJRVUZDYm0xRVdpdDFiMEZCUVZGRVFVVmpkMUpSU1dkQk5tSktiMjVEZDFwNWVuTmFlR0pHUW1kRmMxRXZOMFJ4VkhaRlUwcFZiV1ZHU3pCcE0waFJDa0puYzBOSlVVTjRZalUxTlROeFFrWkpTSHBSTTBaTU1ERkxOMUJGTUhVeFVYcFJNMHAxV0d4T05HOW9Ta1pJTHpWNlFVdENaMmR4YUd0cVQxQlJVVVFLUVhkT2NFRkVRbTFCYWtWQmFtaG5WRzVwUWpWNlExQlBZV2RyT0ZkWmQwaHBSSGRZT1ZCMmNUaExRM1J2UlhKU2JEVTRNMDlyY0RSWVQzRjJNamh4THdwa01HMWFORVYwYVVSSUsyTkJha1ZCTTFvNVpFSmlNMW81V1dWRWREaE5jelkzYVRGVk1YZEhiR1JqYWxVMksyTllWbHA1VEZwdU5FTnJORTkyV0hrNUNtWTNlbXN2S3poeVVVcFFiRVF2Um13S0xTMHRMUzFGVGtRZ1EwVlNWRWxHU1VOQlZFVXRMUzB0TFFvPSJ9fX19",
+       "inclusionPromise": {
+        "signedEntryTimestamp": "MEQCIBnLKWXM5SpKRBnch1jjgx95Pzj2l2M/MIf20bPSRKDGAiBNYYzZlgIaaQagFnirBD10qEw6OaTqNNCVql5V7skzBg=="
+       },
+       "inclusionProof": {
+        "checkpoint": {
+         "envelope": "rekor.sigstore.dev - 1193050959916656506\n1508981866\nR96GcXGJAvI9l3Ie981TAuJxN6e476yslGMyMaJogrA=\n\n\u2014 rekor.sigstore.dev wNI9ajBEAiAp/CuFoXniNIjjedTStNA5BdoxLHCGSYiRYEze9DMg8QIgV9PG118BxQyI9yAv3y8j3M613fY/CsskL6KtLt1PdZ0=\n"
+        },
+        "hashes": [
+         "+FNPujaMYQQk3JGxNKAdJ7kT+WPs/Ao2uDFbQrQZ/TI=",
+         "Lgbhc6aHFfdUJBszlbePrMzcFdUkMvmlsvYUBxkBY4A=",
+         "cJw6CwS9x2qtXU8R5WnaKitI3RdoD6kNPEDmEWa+Afk=",
+         "Yo9xCalFz59GdbzN0CZESMi/zrehoFigtLuFelZ6Nu0=",
+         "wLf9scZ5YW07SglvwbeVYGxIApvP6ge8seslyc0itzY=",
+         "0RiIPXiL13Xzb5fDRflZHSfnwy0p5KvLTzHcltSxbaI=",
+         "HijFDollyFR/+pfAnQ/TkV5YSxNkYn7AJFKxZJocXds=",
+         "w+JgW9DTMBaecBRL/09Ycg67DI1Jy2HESzs/0EpzwJI=",
+         "LOJC0trY8/LXiHtqZss0ozhgB7S6DqHDyqJ7181bBVw=",
+         "PMLYGa2LoX06JO6wir1+9vGrQPl2RllwhDIMIApmRko=",
+         "b/56PRdA5e7JTrJdQ7CxdHxYvclrtJ2jaKL5Kk91b1Y=",
+         "KAYgSu6XJlVU1SZRjv58eT19KpwatKoGEmw00ufU82A=",
+         "0GZOYMIArT3z/GRevEX9sLdbglhQ9e3u+8vNJwDUjNk=",
+         "ahJC8d1bFF493BmfpMVIwmLE9q1Y58ogoCc/mseK47w=",
+         "UXEcQczLN1hd6Un5Dxc/sHG8QQcK5frNO0KiNQTuPIM=",
+         "tLD7gPdtpD2VeOOP+q/ptV5qjWLNLe40XjHyOdX7E7w=",
+         "r5nn9+mbgUQL4m8neTg/XjYkdf2hD/cvZMsNR/v0cBU=",
+         "eT+F471g2HJfd43U4j4L1PIBkt4rLbHQd/pOR/rllO0=",
+         "DOCeoSMovIvLExkhIvisow9AuNXgeWs4ECkyR6EcqYU="
+        ],
+        "logIndex": "1508981858",
+        "rootHash": "R96GcXGJAvI9l3Ie981TAuJxN6e476yslGMyMaJogrA=",
+        "treeSize": "1508981866"
+       },
+       "integratedTime": "1779741359",
+       "kindVersion": {
+        "kind": "hashedrekord",
+        "version": "0.0.1"
+       },
+       "logId": {
+        "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+       },
+       "logIndex": "1630886120"
+      }
+     ]
+    }
+   },
+   "keyid": "aa731b3cc24464a6bf5e42d9b54998a2b6fa97a5a7c8f4ff3492bcaea4b37efb",
+   "sig": "MEQCIEFKzKkGvaOE6vbqvAO1+eHAfCKK+ja5pKRQtUetglaAAiAKIf3zce2UhGXSbVMPj+m77jPejmdAk0jb6U9qCMBCvg=="
+  }
+ ],
+ "signed": {
+  "_type": "targets",
+  "expires": "2027-04-09T21:46:42Z",
+  "spec_version": "1.0.31",
+  "targets": {
+   "oci-prometheus-sd-proxy/releases/v1.4.2-rc.json": {
+    "hashes": {
+     "sha256": "d24aa1c83ecd2a5b0a52c3e217a7f718590aa9b70bdec7f2c520f20c22e52e2f"
+    },
+    "length": 1587
+   },
+   "oci-prometheus-sd-proxy/releases/v1.4.2.json": {
+    "hashes": {
+     "sha256": "2df6d9931586be4535b7fba1a25e1055c6f1d6acec4c5cfe2e714f5db4a36481"
+    },
+    "length": 1569
+   },
+   "oci-prometheus-sd-proxy/releases/v1.5.0.json": {
+    "hashes": {
+     "sha256": "b67cad65d37bf3df78dfef559ec49613a9d9b3dc2ad9855e252d28927630ac94"
+    },
+    "length": 1569
+   },
+   "oci-prometheus-sd-proxy/releases/v1.5.1.json": {
+    "hashes": {
+     "sha256": "5cdf05dba12a196e0491df6fc9c5bbf85ae549b6561ce2d9244cdc0121229add"
+    },
+    "length": 1569
+   },
+   "oci-prometheus-sd-proxy/releases/v1.5.2.json": {
+    "hashes": {
+     "sha256": "b8b2c007db800d289d7da8df0c411cccdacc86a099e8db30e5b3f1ccf2dcfa91"
+    },
+    "length": 1569
+   },
+   "oci-prometheus-sd-proxy/releases/v1.5.3-rc.json": {
+    "hashes": {
+     "sha256": "d183933af12c00480ae495001e635591cab4f5951e31638380d9b6cb61dbbc43"
+    },
+    "length": 1587
+   },
+   "oci-prometheus-sd-proxy/releases/v1.5.3.json": {
+    "hashes": {
+     "sha256": "4d5c34b1c560ab2c1828e0bdab1ec67e0827d8c0b05f50f22d76762568599f6c"
+    },
+    "length": 1569
+   },
+   "oci-prometheus-sd-proxy/releases/v1.5.4.json": {
+    "hashes": {
+     "sha256": "b11b0a5f4aec143da4be5a0d9cf34b2a5c325d500595fef5f57b5344724e1ca4"
+    },
+    "length": 1569
+   }
+  },
+  "version": 9,
+  "x-tuf-on-ci-expiry-period": 365,
+  "x-tuf-on-ci-signing-period": 60
+ }
+}
